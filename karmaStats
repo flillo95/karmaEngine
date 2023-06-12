@@ -1,0 +1,1393 @@
+[15:53:04] husk version 19.5.626
+[15:53:04] Command Line: husk -j 12 -s /Render/rendersettings -c /cameras/shot_cam --make-output-path -o /mutter/projects/renderengine-testing/scenes/renderman/img-cgi/renderman_lighting_lightTypes_v017/karma/karma_v017_1001.exr -f 1001 -R BRAY_HdKarma --purpose geometry,render --complexity veryhigh --snapshot 300 --mplay-session renderman_lighting_lightTypes_v011_fralil -V 9a --stdout /mutter/projects/renderengine-testing/scenes/renderman/img-cgi/renderman_lighting_lightTypes_v017/karma/karma_v017_1001.txt /tmp/houdini_temp/usd_renders/usdrender_1048_9075_1/__render__.usd
+[15:53:04] CPU AMD EPYC 7702P 64-Core Processor
+[15:53:04] Architecture - AMD64: mmx xmmx sse sse2 cmov fpcmov ht sse3 ssse3 sse4.1 sse4.2 avx avx2
+[15:53:04] System limit: 512000 file descriptors
+[15:53:04] Setting default OIIO config: OPENIMAGEIO_IMAGECACHE_OPTIONS=max_memory_MB=59341,max_open_files=256000,autotile=512,autoscanline=1
+[15:53:12] Loading /tmp/houdini_temp/usd_renders/usdrender_1048_9075_1/__render__.usd
+[15:53:13] Running prerender procedurals script: /mnt/puppetshare/software/houdini/houdini-19.5/extracted/hfs19.5.626/houdini/python3.9libs/husd/runprocedurals.py --mode prerender --validategeo
+[15:53:13] Loading render settings: /Render/rendersettings
+[15:53:13] /Render/rendersettings: Loading product: /Render/Products/preview
+[15:53:13] /Render/Products/preview: Loading render var: /Render/Products/Vars/Beauty
+[15:53:13] /Render/Products/preview contains 1 render vars
+[15:53:13] /Render/rendersettings contains 1 render products
+[15:53:13] Load 529 properties from /mnt/puppetshare/software/houdini/houdini-19.5/extracted/hfs19.5.626/houdini/RenderProperties.json
+[15:53:13]  Imported 0 global defaults
+[15:53:13]  Imported 0 object defaults
+[15:53:13]  Imported 0 light defaults
+[15:53:13]  Imported 1 camera defaults
+[15:53:13]  Imported 0 plane defaults
+[15:53:13]  Imported 0 command defaults
+[15:53:13] Creating karma scene
+[15:53:13] Initial Render Settings
+[15:53:13]   aspectRatioConformPolicy := adjustPixelAspectRatio
+[15:53:13]   karma:global:uvunwrap_type := UDIM
+[15:53:13]   karma:global:use_background := Auto
+[15:53:13]   karma:object:cull_backface := Off
+[15:53:13]   karma:global:overrideobject := 
+[15:53:13]   karma:global:engine := cpu
+[15:53:13]   karma:global:uvunwrap_object_id := -1
+[15:53:13]   karma:global:override_lighting := Off
+[15:53:13]   karma:object:refractlimit := 3
+[15:53:13]   karma:object:sssquality := 1
+[15:53:13]   karma:object:curve_basis := 0
+[15:53:13]   karma:global:dicingcamera := 
+[15:53:13]   karma:global:volumecomponents := volume
+[15:53:13]   karma:global:embree_quality := 1
+[15:53:13]   karma:global:uvunwrap_ptex_small_pct := 0
+[15:53:13]   karma:global:autoheadlight := 1
+[15:53:13]   karma:global:head_ao_samples := 1
+[15:53:13]   karma:global:disable_lighting := 0
+[15:53:13]   materialBindingPurposes := [full, allPurpose]
+[15:53:13]   karma:global:ssscomponents := sss
+[15:53:13]   karma:global:progressivepasses := 0
+[15:53:13]   dataWindowNDC := (0, 0, 1, 1)
+[15:53:13]   karma:object:point_style := Spheres
+[15:53:13]   karma:global:ipr_continuous_dicing := 0
+[15:53:13]   karma:global:raybias := 0.001
+[15:53:13]   karma:global:pixelfilter := blackman
+[15:53:13]   karma:object:causticsroughnessclamp := 0.2
+[15:53:13]   karma:object:reflectquality := 1
+[15:53:13]   karma:global:refractcomponents := refract
+[15:53:13]   karma:global:light_sampling_quality := 1
+[15:53:13]   karma:global:pixeloracle := ["variance", {"variance": 0.1, "plane": "C", "minrays": 3, "ociomode": 0, "ociodisplay": "RISE", "ocioview": "Client Grade", "ociocolorspace": "default"}]
+[15:53:13]   shutter:close := 0.25
+[15:53:13]   karma:object:instance_vblur := No Velocity Blur
+[15:53:13]   usdSettingsPrim := /Render/rendersettings
+[15:53:13]   renderCameraPath := /cameras/shot_cam
+[15:53:13]   karma:object:mblur := 1
+[15:53:13]   karma:global:imagefilter := []
+[15:53:13]   karma:object:curve_style := Rounded Curves
+[15:53:13]   instantaneousShutter := 0
+[15:53:13]   karma:global:constrainmaxrough := 1
+[15:53:13]   karma:object:refractquality := 1
+[15:53:13]   karma:global:uvunwrap_ptex_max_res := (1280, 1280)
+[15:53:13]   huskDelegateOptions := 
+[15:53:13]   karma:object:volumelimit := 0
+[15:53:13]   karma:global:abortmissingtexture := 0
+[15:53:13]   houdini:frame := 1001
+[15:53:13]   shutter:open := -0.25
+[15:53:13]   karma:object:geosamples := 3
+[15:53:13]   batchCommandLine := [husk, -j, 12, -s, /Render/rendersettings, -c, /cameras/shot_cam, --make-output-path, -o, /mutter/projects/renderengine-testing/scenes/renderman/img-cgi/renderman_lighting_lightTypes_v017/karma/karma_v017_1001.exr, -f, 1001, -R, BRAY_HdKarma, --purpose, geometry,render, --complexity, veryhigh, --snapshot, 300, --mplay-session, renderman_lighting_lightTypes_v011_fralil, -V, 9a, --stdout, /mutter/projects/renderengine-testing/scenes/renderman/img-cgi/renderman_lighting_lightTypes_v017/karma/karma_v017_1001.txt, /tmp/houdini_temp/usd_renders/usdrender_1048_9075_1/__render__.usd]
+[15:53:13]   karma:global:head_depthcue_z := (0, 0)
+[15:53:13]   karma:global:dicingqualityscale := 1
+[15:53:13]   karma:global:colorlimit := 100000
+[15:53:13]   karma:object:volumesteprate := 0.25
+[15:53:13]   karma:global:uvunwrap_texture_tile := -1
+[15:53:13]   houdini:renderer := husk
+[15:53:13]   karma:object:causticsenable := 0
+[15:53:13]   karma:global:pathtracedsamples := 16
+[15:53:13]   usdFilename := /tmp/houdini_temp/usd_renders/usdrender_1048_9075_1/__render__.usd
+[15:53:13]   pixelAspectRatio := 1.6875
+[15:53:13]   karma:object:volumequality := 1
+[15:53:13]   karma:global:background_iprfilter := 
+[15:53:13]   disableMotionBlur := 0
+[15:53:13]   karma:global:image_blur := 1
+[15:53:13]   karma:global:head_depthcue_alpha := 1
+[15:53:13]   karma:global:uvunwrap_ptex_rel_scale := 0
+[15:53:13]   karma:global:guiding_enable := 0
+[15:53:13]   karma:global:colorlimitindlinked := 0
+[15:53:13]   renderMode := batch
+[15:53:13]   karma:global:head_ao_distance := 1
+[15:53:13]   karma:global:imagemode := Progressive
+[15:53:13]   karma:global:guiding_spatialfilter := 0.5
+[15:53:13]   karma:global:cachesize := 1000
+[15:53:13]   karma:global:screendoorlimit := 4
+[15:53:13]   karma:global:diffusecomponents := diffuse
+[15:53:13]   karma:global:samplefilter := []
+[15:53:13]   karma:global:convergence_mode := Variance
+[15:53:13]   karma:object:varianceaa_minsamples := 1
+[15:53:13]   karma:object:reflectlimit := 3
+[15:53:13]   karma:global:ipr_inc_random := 0
+[15:53:13]   karma:object:diffuselimit := 1
+[15:53:13]   karma:global:enable_dof := 0
+[15:53:13]   karma:global:bucketorder := Middle
+[15:53:13]   karma:object:diffusequality := 1
+[15:53:13]   karma:object:ssslimit := 0
+[15:53:13]   karma:object:instance_samples := 3
+[15:53:13]   karma:global:randomseed := 0
+[15:53:13]   karma:global:offscreenquality := 0.01
+[15:53:13]   karma:global:uvunwrap_info := 0
+[15:53:13]   karma:object:varianceaa_maxsamples := 3
+[15:53:13]   karma:object:varianceaa_thresh := 0.1
+[15:53:13]   karma:global:shadingqualitymult := 1
+[15:53:13]   karma:global:samplesperpixel := 16
+[15:53:13]   karma:global:russianroulette_cutoff := 1
+[15:53:13]   karma:object:vblur := No Velocity Blur
+[15:53:13]   karma:global:bucketsize := 32
+[15:53:13]   karma:global:guiding_directionalfilter := 0.1
+[15:53:13]   karma:global:colorlimitindirect := 3
+[15:53:13]   karma:global:usecacheratio := 1
+[15:53:13]   karma:object:xformsamples := 3
+[15:53:13]   houdini:fps := 24
+[15:53:13]   karma:global:uvunwrap_ptex_scale := 1
+[15:53:13]   karma:global:ipr_proxydepth := 0
+[15:53:13]   karma:global:ipr_reserve_threads := 0
+[15:53:13]   karma:global:uvunwrap_ptex_min_res := (1280, 1280)
+[15:53:13]   karma:object:volumevblurscale := 1
+[15:53:13]   karma:global:light_sampling_mode := Light Tree
+[15:53:13]   includedPurposes := [geometry, render]
+[15:53:13]   usdFileTimeStamp := 1686232383
+[15:53:13]   karma:global:head_depthcue_color := (0, 0, 0)
+[15:53:13]   karma:object:mtlx_imageblur := 0.00023
+[15:53:13]   resolution := (1920, 1080)
+[15:53:13]   karma:global:exportcomponents := diffuse reflect coat refract volume sss
+[15:53:13]   karma:global:cacheratio := 0.85
+[15:53:13]   karma:global:rendercamera := /cameras/shot_cam
+[15:53:13]   karma:global:pixelfiltersize := 1.5
+[15:53:13]   karma:global:guiding_samples := 64
+[15:53:13]   karma:global:ipr_enable := 0
+[15:53:13] Create Fallback Sprim: sphereLight
+[15:53:13] Create HdSprim: sphereLight 
+[15:53:13] Create Fallback Sprim: diskLight
+[15:53:13] Create HdSprim: diskLight 
+[15:53:13] Create Fallback Sprim: rectLight
+[15:53:13] Create HdSprim: rectLight 
+[15:53:13] Create Fallback Sprim: coordSys
+[15:53:13] Create HdSprim: coordSys 
+[15:53:13] Create Fallback Sprim: domeLight
+[15:53:13] Create HdSprim: domeLight 
+[15:53:13] Create Fallback Sprim: extComputation
+[15:53:13] Create HdSprim: extComputation 
+[15:53:13] Create Fallback Sprim: cylinderLight
+[15:53:13] Create HdSprim: cylinderLight 
+[15:53:13] Create Fallback Sprim: camera
+[15:53:13] Create HdSprim: camera 
+[15:53:13] Create Fallback Sprim: material
+[15:53:13] Create HdSprim: material 
+[15:53:13] Create Fallback Sprim: lightFilter
+[15:53:13] Create HdSprim: lightFilter 
+[15:53:13] Create Fallback Sprim: distantLight
+[15:53:13] Create HdSprim: distantLight 
+[15:53:13] Create HdBprim: bprimHoudiniFieldAsset 
+[15:53:13] Create HdBprim: openvdbAsset 
+[15:53:13] Create HdBprim: renderBuffer 
+[15:53:13] SetRenderSetting[stageMetersPerUnit] := 1
+[15:53:13] Adding AOV for color4f C (C)
+[15:53:13] Create HdBprim: renderBuffer /_UsdImaging_BRAY_HdKarma_0x7fbe75a7b100/aov_C
+[15:53:13] New AOV: /_UsdImaging_BRAY_HdKarma_0x7fbe75a7b100/aov_C
+[15:53:13] {
+    "RenderDelegate":"BRAY_HdKarma",
+    "camera":"/cameras/shot_cam",
+    "RenderSettings":{
+	"aspectRatioConformPolicy":"adjustPixelAspectRatio",
+	"batchCommandLine":["husk","-j","12","-s","/Render/rendersettings","-c","/cameras/shot_cam","--make-output-path","-o","/mutter/projects/renderengine-testing/scenes/renderman/img-cgi/renderman_lighting_lightTypes_v017/karma/karma_v017_1001.exr","-f","1001","-R","BRAY_HdKarma","--purpose","geometry,render","--complexity","veryhigh","--snapshot","300","--mplay-session","renderman_lighting_lightTypes_v011_fralil","-V","9a","--stdout","/mutter/projects/renderengine-testing/scenes/renderman/img-cgi/renderman_lighting_lightTypes_v017/karma/karma_v017_1001.txt","/tmp/houdini_temp/usd_renders/usdrender_1048_9075_1/__render__.usd"
+	],
+	"dataWindowNDC":[0,0,1,1],
+	"disableMotionBlur":false,
+	"houdini:fps":24,
+	"houdini:frame":1001,
+	"houdini:renderer":"husk",
+	"huskDelegateOptions":"",
+	"includedPurposes":["geometry","render"
+	],
+	"instantaneousShutter":false,
+	"karma:global:abortmissingtexture":false,
+	"karma:global:autoheadlight":true,
+	"karma:global:background_iprfilter":"",
+	"karma:global:bucketorder":"Middle",
+	"karma:global:bucketsize":32,
+	"karma:global:cacheratio":0.850000024,
+	"karma:global:cachesize":1000,
+	"karma:global:colorlimit":100000,
+	"karma:global:colorlimitindirect":3,
+	"karma:global:colorlimitindlinked":false,
+	"karma:global:constrainmaxrough":true,
+	"karma:global:convergence_mode":"Variance",
+	"karma:global:dicingcamera":"",
+	"karma:global:dicingqualityscale":1,
+	"karma:global:diffusecomponents":"diffuse",
+	"karma:global:disable_lighting":false,
+	"karma:global:embree_quality":1,
+	"karma:global:enable_dof":false,
+	"karma:global:engine":"cpu",
+	"karma:global:exportcomponents":"diffuse reflect coat refract volume sss",
+	"karma:global:guiding_directionalfilter":0.100000001,
+	"karma:global:guiding_enable":false,
+	"karma:global:guiding_samples":64,
+	"karma:global:guiding_spatialfilter":0.5,
+	"karma:global:head_ao_distance":1,
+	"karma:global:head_ao_samples":1,
+	"karma:global:head_depthcue_alpha":1,
+	"karma:global:head_depthcue_color":[0,0,0],
+	"karma:global:head_depthcue_z":[0,0],
+	"karma:global:image_blur":true,
+	"karma:global:imagefilter":"[]",
+	"karma:global:imagemode":"Progressive",
+	"karma:global:ipr_continuous_dicing":false,
+	"karma:global:ipr_enable":false,
+	"karma:global:ipr_inc_random":false,
+	"karma:global:ipr_proxydepth":0,
+	"karma:global:ipr_reserve_threads":0,
+	"karma:global:light_sampling_mode":"Light Tree",
+	"karma:global:light_sampling_quality":1,
+	"karma:global:offscreenquality":0.00999999978,
+	"karma:global:override_lighting":"Off",
+	"karma:global:overrideobject":"",
+	"karma:global:pathtracedsamples":16,
+	"karma:global:pixelfilter":"blackman",
+	"karma:global:pixelfiltersize":1.5,
+	"karma:global:pixeloracle":"[\"variance\", {\"variance\": 0.1, \"plane\": \"C\", \"minrays\": 3, \"ociomode\": 0, \"ociodisplay\": \"RISE\", \"ocioview\": \"Client Grade\", \"ociocolorspace\": \"default\"}]",
+	"karma:global:progressivepasses":0,
+	"karma:global:randomseed":0,
+	"karma:global:raybias":0.00100000005,
+	"karma:global:refractcomponents":"refract",
+	"karma:global:rendercamera":"/cameras/shot_cam",
+	"karma:global:russianroulette_cutoff":1,
+	"karma:global:samplefilter":"[]",
+	"karma:global:samplesperpixel":16,
+	"karma:global:screendoorlimit":4,
+	"karma:global:shadingqualitymult":1,
+	"karma:global:ssscomponents":"sss",
+	"karma:global:use_background":"Auto",
+	"karma:global:usecacheratio":true,
+	"karma:global:uvunwrap_info":false,
+	"karma:global:uvunwrap_object_id":-1,
+	"karma:global:uvunwrap_ptex_max_res":[1280,1280],
+	"karma:global:uvunwrap_ptex_min_res":[1280,1280],
+	"karma:global:uvunwrap_ptex_rel_scale":false,
+	"karma:global:uvunwrap_ptex_scale":1,
+	"karma:global:uvunwrap_ptex_small_pct":0,
+	"karma:global:uvunwrap_texture_tile":-1,
+	"karma:global:uvunwrap_type":"UDIM",
+	"karma:global:volumecomponents":"volume",
+	"karma:object:causticsenable":false,
+	"karma:object:causticsroughnessclamp":0.200000003,
+	"karma:object:cull_backface":"Off",
+	"karma:object:curve_basis":0,
+	"karma:object:curve_style":"Rounded Curves",
+	"karma:object:diffuselimit":1,
+	"karma:object:diffusequality":1,
+	"karma:object:geosamples":3,
+	"karma:object:instance_samples":3,
+	"karma:object:instance_vblur":"No Velocity Blur",
+	"karma:object:mblur":true,
+	"karma:object:mtlx_imageblur":0.000230000005,
+	"karma:object:point_style":"Spheres",
+	"karma:object:reflectlimit":3,
+	"karma:object:reflectquality":1,
+	"karma:object:refractlimit":3,
+	"karma:object:refractquality":1,
+	"karma:object:ssslimit":0,
+	"karma:object:sssquality":1,
+	"karma:object:varianceaa_maxsamples":3,
+	"karma:object:varianceaa_minsamples":1,
+	"karma:object:varianceaa_thresh":0.100000001,
+	"karma:object:vblur":"No Velocity Blur",
+	"karma:object:volumelimit":0,
+	"karma:object:volumequality":1,
+	"karma:object:volumesteprate":0.25,
+	"karma:object:volumevblurscale":1,
+	"karma:object:xformsamples":3,
+	"materialBindingPurposes":["full","allPurpose"
+	],
+	"pixelAspectRatio":1.6875,
+	"renderCameraPath":"/cameras/shot_cam",
+	"renderMode":"batch",
+	"resolution":[1920,1080],
+	"shutter:close":0.25,
+	"shutter:open":-0.25,
+	"usdFileTimeStamp":1686232383,
+	"usdFilename":"/tmp/houdini_temp/usd_renders/usdrender_1048_9075_1/__render__.usd",
+	"usdSettingsPrim":"/Render/rendersettings"
+    },
+    "RenderProducts":[
+	{
+	    "settings":{
+		"driver:parameters:OpenEXR:compression":"dwaa",
+		"driver:parameters:OpenEXR:dwa_compression":85,
+		"driver:parameters:artist":"",
+		"driver:parameters:comment":"",
+		"driver:parameters:hostname":"",
+		"productName":"/mutter/projects/renderengine-testing/scenes/renderman/img-cgi/renderman_lighting_lightTypes_v011/karmaLightTypes/preview/renderman_lighting_lightTypes_v011_karmaLightTypes.0000.exr",
+		"productType":"raster",
+		"risefx_renderoutput":"karmaLightTypes",
+		"sourcePrim":"/Render/Products/preview"
+	    },
+	    "expandedProductName":"",
+	    "RenderVariables":[
+		{
+		    "AOVName":"C",
+		    "AOVPixelFormat":"float16",
+		    "AOVChannelSize":4,
+		    "HdFormat":"HdFormatFloat32Vec4",
+		    "HdMultiSampled":false,
+		    "HdClearValue":0,
+		    "settings":{
+			"dataType":"color4f",
+			"driver:parameters:aov:channel_prefix":"",
+			"driver:parameters:aov:clearValue":0,
+			"driver:parameters:aov:cryptomatte":false,
+			"driver:parameters:aov:cryptomatterank":6,
+			"driver:parameters:aov:cryptomattesidecar":"",
+			"driver:parameters:aov:defaultvalue":0,
+			"driver:parameters:aov:dither":1,
+			"driver:parameters:aov:filter":"[\"ubox\",{}]",
+			"driver:parameters:aov:format":"color4h",
+			"driver:parameters:aov:multiSampled":false,
+			"driver:parameters:aov:name":"C",
+			"driver:parameters:aov:sampling":"average",
+			"sourceName":"C.*",
+			"sourcePrim":"/Render/Products/Vars/Beauty",
+			"sourceType":"lpe"
+		    }
+		}
+	    ]
+	}
+    ]
+}
+
+[15:53:13] Loading render settings: /Render/rendersettings
+[15:53:13] /Render/rendersettings contains 1 render products
+[15:53:13] SetRenderSetting[delegateRenderProducts] := 
+[15:53:13] Running preframe procedurals script: /mnt/puppetshare/software/houdini/houdini-19.5/extracted/hfs19.5.626/houdini/python3.9libs/husd/runprocedurals.py --mode preframe --validategeo
+[15:53:13] Start Wall Clock Time: 0:00:08.90
+[15:53:13]   Start Memory Usage: 1.28 GB
+[15:53:13] >>> Render /mutter/projects/renderengine-testing/scenes/renderman/img-cgi/renderman_lighting_lightTypes_v017/karma/karma_v017_1001.exr
+[15:53:13] SetRenderSetting[randomseed] := 1703806500
+ALF_PROGRESS 0%
+[15:53:13] Create HdRprim: mesh /ground2/mesh_0
+[15:53:13] Create HdRprim: mesh /rubbertoy3/geo/shape
+[15:53:13] Create HdSprim: material /rubbertoy3/mtl/ToyShader
+[15:53:13] Create HdSprim: camera /cameras/shot_cam
+[15:53:13] Create HdSprim: distantLight /lights/distantlight6
+[15:53:13] Create HdRprim: mesh /fogbox5/GEO/volume
+[15:53:13] Create HdSprim: material /fogbox5/materials/OUT_fogbox
+[15:53:13] Create HdRprim: mesh /fogbox5/PROXY/volume
+[15:53:13] Allocate AOV buffer: (1920, 1080, 1) 15
+[15:53:13] Sync camera /cameras/shot_cam
+[15:53:13] Aspect ratio conform 0 H/V: 0.00020955/6.985e-05, PAR: 1, IAR: 3
+[15:53:13] 1 motion segments for /cameras/shot_cam
+[15:53:13] Aspect ratio conform 4 H/V: 0.00020955/6.985e-05, PAR: 1.6875, IAR: 3
+[15:53:13] Camera /cameras/shot_cam:
+{
+	"transform":[[0.139620023238989727,-0.0397328071062794386,0.989407677931700369,0,2.85460831832805295e-07,0.999194636054259733,0.0401257932047962076,0,-0.990205155061648079,-0.00560208174259777675,0.139507589648329766,0,0.240647919609608629,0.18755382498097542,
+			-5.41786219288679316,1]
+	],
+	"projection":"perspective",
+	"cameraProperties":[
+		{
+			"focal":0.000180000006366753951,
+			"aperture":6.9850000727456063e-05,
+			"projection":1,
+			"lensshader":"RAW[ \"hou.node(ch('xn__karmacameralensshadervop_4fbg')).shaderString() if hou.node(ch('xn__karmacameralensshadervop_4fbg')) != None else ''\" python ]",
+			"orthowidth":6.98500007274560613e-06,
+			"clip":[0.0280728694051504135,28072.87109375],
+			"shutter":[-0.25,0.25],
+			"focusdistance":5,
+			"fstop":0,
+			"window":[-1,1,-1,1],
+			"exposure":0,
+			"tint":[1,1,1]
+		}
+	]
+}
+
+[15:53:13] Sync Light /lights/distantlight6
+[15:53:13] Light /lights/distantlight6 xform[0]: ( (0.7762707276007573, 0, 0.6303996807345248, 0), (0.45890141934932577, 0.685626898348426, -0.5650887041697891, 0), (-0.43221897782185026, 0.7279531277912865, 0.5322320912435832, 0), (0, 0, 0, 1) )
+[15:53:13] Define shader node: ND_disney_brdf_2012_surface
+[15:53:13] Define shader node: ND_disney_bsdf_2015_surface
+[15:53:13] Define shader node: ND_oren_nayar_diffuse_bsdf
+[15:53:13] Define shader node: ND_burley_diffuse_bsdf
+[15:53:13] Define shader node: ND_translucent_bsdf
+[15:53:13] Define shader node: ND_dielectric_bsdf
+[15:53:13] Define shader node: ND_conductor_bsdf
+[15:53:13] Define shader node: ND_generalized_schlick_bsdf
+[15:53:13] Define shader node: ND_subsurface_bsdf
+[15:53:13] Define shader node: ND_sheen_bsdf
+[15:53:13] Define shader node: ND_thin_film_bsdf
+[15:53:13] Define shader node: ND_uniform_edf
+[15:53:13] Define shader node: ND_conical_edf
+[15:53:13] Define shader node: ND_measured_edf
+[15:53:13] Define shader node: ND_absorption_vdf
+[15:53:13] Define shader node: ND_anisotropic_vdf
+[15:53:13] Define shader node: ND_surface
+[15:53:13] Define shader node: ND_thin_surface
+[15:53:13] Define shader node: ND_volume
+[15:53:13] Define shader node: ND_light
+[15:53:13] Define shader node: ND_displacement_float
+[15:53:13] Define shader node: ND_displacement_vector3
+[15:53:13] Define shader node: ND_layer_bsdf
+[15:53:13] Define shader node: ND_layer_vdf
+[15:53:13] Define shader node: ND_mix_bsdf
+[15:53:13] Define shader node: ND_mix_edf
+[15:53:13] Define shader node: ND_mix_vdf
+[15:53:13] Define shader node: ND_add_bsdf
+[15:53:13] Define shader node: ND_add_edf
+[15:53:13] Define shader node: ND_add_vdf
+[15:53:13] Define shader node: ND_multiply_bsdfC
+[15:53:13] Define shader node: ND_multiply_bsdfF
+[15:53:13] Define shader node: ND_multiply_edfC
+[15:53:13] Define shader node: ND_multiply_edfF
+[15:53:13] Define shader node: ND_multiply_vdfC
+[15:53:13] Define shader node: ND_multiply_vdfF
+[15:53:13] Define shader node: ND_roughness_anisotropy
+[15:53:13] Define shader node: ND_roughness_dual
+[15:53:13] Define shader node: ND_blackbody
+[15:53:13] Define shader node: ND_artistic_ior
+[15:53:13] Define shader node: ND_surfacematerial
+[15:53:13] Define shader node: ND_volumematerial
+[15:53:13] Define shader node: ND_surface_unlit
+[15:53:13] Define shader node: ND_image_float
+[15:53:13] Define shader node: ND_image_color3
+[15:53:13] Define shader node: ND_image_color4
+[15:53:13] Define shader node: ND_image_vector2
+[15:53:13] Define shader node: ND_image_vector3
+[15:53:13] Define shader node: ND_image_vector4
+[15:53:13] Define shader node: ND_constant_float
+[15:53:13] Define shader node: ND_constant_color3
+[15:53:13] Define shader node: ND_constant_color4
+[15:53:13] Define shader node: ND_constant_vector2
+[15:53:13] Define shader node: ND_constant_vector3
+[15:53:13] Define shader node: ND_constant_vector4
+[15:53:13] Define shader node: ND_constant_boolean
+[15:53:13] Define shader node: ND_constant_integer
+[15:53:13] Define shader node: ND_constant_matrix33
+[15:53:13] Define shader node: ND_constant_matrix44
+[15:53:13] Define shader node: ND_constant_string
+[15:53:13] Define shader node: ND_constant_filename
+[15:53:13] Define shader node: ND_ramplr_float
+[15:53:13] Define shader node: ND_ramplr_color3
+[15:53:13] Define shader node: ND_ramplr_color4
+[15:53:13] Define shader node: ND_ramplr_vector2
+[15:53:13] Define shader node: ND_ramplr_vector3
+[15:53:13] Define shader node: ND_ramplr_vector4
+[15:53:13] Define shader node: ND_ramptb_float
+[15:53:13] Define shader node: ND_ramptb_color3
+[15:53:13] Define shader node: ND_ramptb_color4
+[15:53:13] Define shader node: ND_ramptb_vector2
+[15:53:13] Define shader node: ND_ramptb_vector3
+[15:53:13] Define shader node: ND_ramptb_vector4
+[15:53:13] Define shader node: ND_splitlr_float
+[15:53:13] Define shader node: ND_splitlr_color3
+[15:53:13] Define shader node: ND_splitlr_color4
+[15:53:13] Define shader node: ND_splitlr_vector2
+[15:53:13] Define shader node: ND_splitlr_vector3
+[15:53:13] Define shader node: ND_splitlr_vector4
+[15:53:13] Define shader node: ND_splittb_float
+[15:53:13] Define shader node: ND_splittb_color3
+[15:53:13] Define shader node: ND_splittb_color4
+[15:53:13] Define shader node: ND_splittb_vector2
+[15:53:13] Define shader node: ND_splittb_vector3
+[15:53:13] Define shader node: ND_splittb_vector4
+[15:53:13] Define shader node: ND_noise2d_float
+[15:53:13] Define shader node: ND_noise2d_color3
+[15:53:13] Define shader node: ND_noise2d_color4
+[15:53:13] Define shader node: ND_noise2d_vector2
+[15:53:13] Define shader node: ND_noise2d_vector3
+[15:53:13] Define shader node: ND_noise2d_vector4
+[15:53:13] Define shader node: ND_noise2d_color3FA
+[15:53:13] Define shader node: ND_noise2d_color4FA
+[15:53:13] Define shader node: ND_noise2d_vector2FA
+[15:53:13] Define shader node: ND_noise2d_vector3FA
+[15:53:13] Define shader node: ND_noise2d_vector4FA
+[15:53:13] Define shader node: ND_noise3d_float
+[15:53:13] Define shader node: ND_noise3d_color3
+[15:53:13] Define shader node: ND_noise3d_color4
+[15:53:13] Define shader node: ND_noise3d_vector2
+[15:53:13] Define shader node: ND_noise3d_vector3
+[15:53:13] Define shader node: ND_noise3d_vector4
+[15:53:13] Define shader node: ND_noise3d_color3FA
+[15:53:13] Define shader node: ND_noise3d_color4FA
+[15:53:13] Define shader node: ND_noise3d_vector2FA
+[15:53:13] Define shader node: ND_noise3d_vector3FA
+[15:53:13] Define shader node: ND_noise3d_vector4FA
+[15:53:13] Define shader node: ND_fractal3d_float
+[15:53:13] Define shader node: ND_fractal3d_color3
+[15:53:13] Define shader node: ND_fractal3d_color4
+[15:53:13] Define shader node: ND_fractal3d_vector2
+[15:53:13] Define shader node: ND_fractal3d_vector3
+[15:53:13] Define shader node: ND_fractal3d_vector4
+[15:53:13] Define shader node: ND_fractal3d_color3FA
+[15:53:13] Define shader node: ND_fractal3d_color4FA
+[15:53:13] Define shader node: ND_fractal3d_vector2FA
+[15:53:13] Define shader node: ND_fractal3d_vector3FA
+[15:53:13] Define shader node: ND_fractal3d_vector4FA
+[15:53:13] Define shader node: ND_cellnoise2d_float
+[15:53:13] Define shader node: ND_cellnoise3d_float
+[15:53:13] Define shader node: ND_worleynoise2d_float
+[15:53:13] Define shader node: ND_worleynoise2d_vector2
+[15:53:13] Define shader node: ND_worleynoise2d_vector3
+[15:53:13] Define shader node: ND_worleynoise3d_float
+[15:53:13] Define shader node: ND_worleynoise3d_vector2
+[15:53:13] Define shader node: ND_worleynoise3d_vector3
+[15:53:13] Define shader node: ND_position_vector3
+[15:53:13] Define shader node: ND_normal_vector3
+[15:53:13] Define shader node: ND_tangent_vector3
+[15:53:13] Define shader node: ND_bitangent_vector3
+[15:53:13] Define shader node: ND_texcoord_vector2
+[15:53:13] Define shader node: ND_texcoord_vector3
+[15:53:13] Define shader node: ND_geomcolor_float
+[15:53:13] Define shader node: ND_geomcolor_color3
+[15:53:13] Define shader node: ND_geomcolor_color4
+[15:53:13] Define shader node: ND_geompropvalue_integer
+[15:53:13] Define shader node: ND_geompropvalue_boolean
+[15:53:13] Define shader node: ND_geompropvalue_string
+[15:53:13] Define shader node: ND_geompropvalue_float
+[15:53:13] Define shader node: ND_geompropvalue_color3
+[15:53:13] Define shader node: ND_geompropvalue_color4
+[15:53:13] Define shader node: ND_geompropvalue_vector2
+[15:53:13] Define shader node: ND_geompropvalue_vector3
+[15:53:13] Define shader node: ND_geompropvalue_vector4
+[15:53:13] Define shader node: ND_ambientocclusion_float
+[15:53:13] Define shader node: ND_frame_float
+[15:53:13] Define shader node: ND_time_float
+[15:53:13] Define shader node: ND_add_float
+[15:53:13] Define shader node: ND_add_color3
+[15:53:13] Define shader node: ND_add_color4
+[15:53:13] Define shader node: ND_add_vector2
+[15:53:13] Define shader node: ND_add_vector3
+[15:53:13] Define shader node: ND_add_vector4
+[15:53:13] Define shader node: ND_add_matrix33
+[15:53:13] Define shader node: ND_add_matrix44
+[15:53:13] Define shader node: ND_add_surfaceshader
+[15:53:13] Define shader node: ND_add_displacementshader
+[15:53:13] Define shader node: ND_add_volumeshader
+[15:53:13] Define shader node: ND_add_color3FA
+[15:53:13] Define shader node: ND_add_color4FA
+[15:53:13] Define shader node: ND_add_vector2FA
+[15:53:13] Define shader node: ND_add_vector3FA
+[15:53:13] Define shader node: ND_add_vector4FA
+[15:53:13] Define shader node: ND_add_matrix33FA
+[15:53:13] Define shader node: ND_add_matrix44FA
+[15:53:13] Define shader node: ND_subtract_float
+[15:53:13] Define shader node: ND_subtract_color3
+[15:53:13] Define shader node: ND_subtract_color4
+[15:53:13] Define shader node: ND_subtract_vector2
+[15:53:13] Define shader node: ND_subtract_vector3
+[15:53:13] Define shader node: ND_subtract_vector4
+[15:53:13] Define shader node: ND_subtract_matrix33
+[15:53:13] Define shader node: ND_subtract_matrix44
+[15:53:13] Define shader node: ND_subtract_color3FA
+[15:53:13] Define shader node: ND_subtract_color4FA
+[15:53:13] Define shader node: ND_subtract_vector2FA
+[15:53:13] Define shader node: ND_subtract_vector3FA
+[15:53:13] Define shader node: ND_subtract_vector4FA
+[15:53:13] Define shader node: ND_subtract_matrix33FA
+[15:53:13] Define shader node: ND_subtract_matrix44FA
+[15:53:13] Define shader node: ND_multiply_float
+[15:53:13] Define shader node: ND_multiply_color3
+[15:53:13] Define shader node: ND_multiply_color4
+[15:53:13] Define shader node: ND_multiply_vector2
+[15:53:13] Define shader node: ND_multiply_vector3
+[15:53:13] Define shader node: ND_multiply_vector4
+[15:53:13] Define shader node: ND_multiply_matrix33
+[15:53:13] Define shader node: ND_multiply_matrix44
+[15:53:13] Define shader node: ND_multiply_color3FA
+[15:53:13] Define shader node: ND_multiply_color4FA
+[15:53:13] Define shader node: ND_multiply_vector2FA
+[15:53:13] Define shader node: ND_multiply_vector3FA
+[15:53:13] Define shader node: ND_multiply_vector4FA
+[15:53:13] Define shader node: ND_multiply_surfaceshaderF
+[15:53:13] Define shader node: ND_multiply_displacementshaderF
+[15:53:13] Define shader node: ND_multiply_volumeshaderF
+[15:53:13] Define shader node: ND_multiply_surfaceshaderC
+[15:53:13] Define shader node: ND_multiply_volumeshaderC
+[15:53:13] Define shader node: ND_multiply_displacementshaderV
+[15:53:13] Define shader node: ND_divide_float
+[15:53:13] Define shader node: ND_divide_color3
+[15:53:13] Define shader node: ND_divide_color4
+[15:53:13] Define shader node: ND_divide_vector2
+[15:53:13] Define shader node: ND_divide_vector3
+[15:53:13] Define shader node: ND_divide_vector4
+[15:53:13] Define shader node: ND_divide_matrix33
+[15:53:13] Define shader node: ND_divide_matrix44
+[15:53:13] Define shader node: ND_divide_color3FA
+[15:53:13] Define shader node: ND_divide_color4FA
+[15:53:13] Define shader node: ND_divide_vector2FA
+[15:53:13] Define shader node: ND_divide_vector3FA
+[15:53:13] Define shader node: ND_divide_vector4FA
+[15:53:13] Define shader node: ND_modulo_float
+[15:53:13] Define shader node: ND_modulo_color3
+[15:53:13] Define shader node: ND_modulo_color4
+[15:53:13] Define shader node: ND_modulo_vector2
+[15:53:13] Define shader node: ND_modulo_vector3
+[15:53:13] Define shader node: ND_modulo_vector4
+[15:53:13] Define shader node: ND_modulo_color3FA
+[15:53:13] Define shader node: ND_modulo_color4FA
+[15:53:13] Define shader node: ND_modulo_vector2FA
+[15:53:13] Define shader node: ND_modulo_vector3FA
+[15:53:13] Define shader node: ND_modulo_vector4FA
+[15:53:13] Define shader node: ND_invert_float
+[15:53:13] Define shader node: ND_invert_color3
+[15:53:13] Define shader node: ND_invert_color4
+[15:53:13] Define shader node: ND_invert_vector2
+[15:53:13] Define shader node: ND_invert_vector3
+[15:53:13] Define shader node: ND_invert_vector4
+[15:53:13] Define shader node: ND_invert_color3FA
+[15:53:13] Define shader node: ND_invert_color4FA
+[15:53:13] Define shader node: ND_invert_vector2FA
+[15:53:13] Define shader node: ND_invert_vector3FA
+[15:53:13] Define shader node: ND_invert_vector4FA
+[15:53:13] Define shader node: ND_absval_float
+[15:53:13] Define shader node: ND_absval_color3
+[15:53:13] Define shader node: ND_absval_color4
+[15:53:13] Define shader node: ND_absval_vector2
+[15:53:13] Define shader node: ND_absval_vector3
+[15:53:13] Define shader node: ND_absval_vector4
+[15:53:13] Define shader node: ND_floor_float
+[15:53:13] Define shader node: ND_floor_color3
+[15:53:13] Define shader node: ND_floor_color4
+[15:53:13] Define shader node: ND_floor_vector2
+[15:53:13] Define shader node: ND_floor_vector3
+[15:53:13] Define shader node: ND_floor_vector4
+[15:53:13] Define shader node: ND_ceil_float
+[15:53:13] Define shader node: ND_ceil_color3
+[15:53:13] Define shader node: ND_ceil_color4
+[15:53:13] Define shader node: ND_ceil_vector2
+[15:53:13] Define shader node: ND_ceil_vector3
+[15:53:13] Define shader node: ND_ceil_vector4
+[15:53:13] Define shader node: ND_power_float
+[15:53:13] Define shader node: ND_power_color3
+[15:53:13] Define shader node: ND_power_color4
+[15:53:13] Define shader node: ND_power_vector2
+[15:53:13] Define shader node: ND_power_vector3
+[15:53:13] Define shader node: ND_power_vector4
+[15:53:13] Define shader node: ND_power_color3FA
+[15:53:13] Define shader node: ND_power_color4FA
+[15:53:13] Define shader node: ND_power_vector2FA
+[15:53:13] Define shader node: ND_power_vector3FA
+[15:53:13] Define shader node: ND_power_vector4FA
+[15:53:13] Define shader node: ND_sin_float
+[15:53:13] Define shader node: ND_cos_float
+[15:53:13] Define shader node: ND_tan_float
+[15:53:13] Define shader node: ND_asin_float
+[15:53:13] Define shader node: ND_acos_float
+[15:53:13] Define shader node: ND_atan2_float
+[15:53:13] Define shader node: ND_sin_vector2
+[15:53:13] Define shader node: ND_cos_vector2
+[15:53:13] Define shader node: ND_tan_vector2
+[15:53:13] Define shader node: ND_asin_vector2
+[15:53:13] Define shader node: ND_acos_vector2
+[15:53:13] Define shader node: ND_atan2_vector2
+[15:53:13] Define shader node: ND_sin_vector3
+[15:53:13] Define shader node: ND_cos_vector3
+[15:53:13] Define shader node: ND_tan_vector3
+[15:53:13] Define shader node: ND_asin_vector3
+[15:53:13] Define shader node: ND_acos_vector3
+[15:53:13] Define shader node: ND_atan2_vector3
+[15:53:13] Define shader node: ND_sin_vector4
+[15:53:13] Define shader node: ND_cos_vector4
+[15:53:13] Define shader node: ND_tan_vector4
+[15:53:13] Define shader node: ND_asin_vector4
+[15:53:13] Define shader node: ND_acos_vector4
+[15:53:13] Define shader node: ND_atan2_vector4
+[15:53:13] Define shader node: ND_sqrt_float
+[15:53:13] Define shader node: ND_ln_float
+[15:53:13] Define shader node: ND_exp_float
+[15:53:13] Define shader node: ND_sqrt_vector2
+[15:53:13] Define shader node: ND_ln_vector2
+[15:53:13] Define shader node: ND_exp_vector2
+[15:53:13] Define shader node: ND_sqrt_vector3
+[15:53:13] Define shader node: ND_ln_vector3
+[15:53:13] Define shader node: ND_exp_vector3
+[15:53:13] Define shader node: ND_sqrt_vector4
+[15:53:13] Define shader node: ND_ln_vector4
+[15:53:13] Define shader node: ND_exp_vector4
+[15:53:13] Define shader node: ND_sign_float
+[15:53:13] Define shader node: ND_sign_color3
+[15:53:13] Define shader node: ND_sign_color4
+[15:53:13] Define shader node: ND_sign_vector2
+[15:53:13] Define shader node: ND_sign_vector3
+[15:53:13] Define shader node: ND_sign_vector4
+[15:53:13] Define shader node: ND_clamp_float
+[15:53:13] Define shader node: ND_clamp_color3
+[15:53:13] Define shader node: ND_clamp_color4
+[15:53:13] Define shader node: ND_clamp_vector2
+[15:53:13] Define shader node: ND_clamp_vector3
+[15:53:13] Define shader node: ND_clamp_vector4
+[15:53:13] Define shader node: ND_clamp_color3FA
+[15:53:13] Define shader node: ND_clamp_color4FA
+[15:53:13] Define shader node: ND_clamp_vector2FA
+[15:53:13] Define shader node: ND_clamp_vector3FA
+[15:53:13] Define shader node: ND_clamp_vector4FA
+[15:53:13] Define shader node: ND_min_float
+[15:53:13] Define shader node: ND_min_color3
+[15:53:13] Define shader node: ND_min_color4
+[15:53:13] Define shader node: ND_min_vector2
+[15:53:13] Define shader node: ND_min_vector3
+[15:53:13] Define shader node: ND_min_vector4
+[15:53:13] Define shader node: ND_min_color3FA
+[15:53:13] Define shader node: ND_min_color4FA
+[15:53:13] Define shader node: ND_min_vector2FA
+[15:53:13] Define shader node: ND_min_vector3FA
+[15:53:13] Define shader node: ND_min_vector4FA
+[15:53:13] Define shader node: ND_max_float
+[15:53:13] Define shader node: ND_max_color3
+[15:53:13] Define shader node: ND_max_color4
+[15:53:13] Define shader node: ND_max_vector2
+[15:53:13] Define shader node: ND_max_vector3
+[15:53:13] Define shader node: ND_max_vector4
+[15:53:13] Define shader node: ND_max_color3FA
+[15:53:13] Define shader node: ND_max_color4FA
+[15:53:13] Define shader node: ND_max_vector2FA
+[15:53:13] Define shader node: ND_max_vector3FA
+[15:53:13] Define shader node: ND_max_vector4FA
+[15:53:13] Define shader node: ND_normalize_vector2
+[15:53:13] Define shader node: ND_normalize_vector3
+[15:53:13] Define shader node: ND_normalize_vector4
+[15:53:13] Define shader node: ND_magnitude_vector2
+[15:53:13] Define shader node: ND_magnitude_vector3
+[15:53:13] Define shader node: ND_magnitude_vector4
+[15:53:13] Define shader node: ND_dotproduct_vector2
+[15:53:13] Define shader node: ND_dotproduct_vector3
+[15:53:13] Define shader node: ND_dotproduct_vector4
+[15:53:13] Define shader node: ND_crossproduct_vector3
+[15:53:13] Define shader node: ND_transformpoint_vector3
+[15:53:13] Define shader node: ND_transformvector_vector3
+[15:53:13] Define shader node: ND_transformnormal_vector3
+[15:53:13] Define shader node: ND_transformmatrix_vector2M3
+[15:53:13] Define shader node: ND_transformmatrix_vector3
+[15:53:13] Define shader node: ND_transformmatrix_vector3M4
+[15:53:13] Define shader node: ND_transformmatrix_vector4
+[15:53:13] Define shader node: ND_normalmap
+[15:53:13] Define shader node: ND_transpose_matrix33
+[15:53:13] Define shader node: ND_transpose_matrix44
+[15:53:13] Define shader node: ND_determinant_matrix33
+[15:53:13] Define shader node: ND_determinant_matrix44
+[15:53:13] Define shader node: ND_invertmatrix_matrix33
+[15:53:13] Define shader node: ND_invertmatrix_matrix44
+[15:53:13] Define shader node: ND_rotate2d_vector2
+[15:53:13] Define shader node: ND_rotate3d_vector3
+[15:53:13] Define shader node: ND_arrayappend_integer_integerarray
+[15:53:13] Define shader node: ND_arrayappend_integerarray_integerarray
+[15:53:13] Define shader node: ND_arrayappend_float_floatarray
+[15:53:13] Define shader node: ND_arrayappend_floatarray_floatarray
+[15:53:13] Define shader node: ND_arrayappend_color3_color3array
+[15:53:13] Define shader node: ND_arrayappend_color3array_color3array
+[15:53:13] Define shader node: ND_arrayappend_color4_color4array
+[15:53:13] Define shader node: ND_arrayappend_color4array_color4array
+[15:53:13] Define shader node: ND_arrayappend_vector2_vector2array
+[15:53:13] Define shader node: ND_arrayappend_vector2array_vector2array
+[15:53:13] Define shader node: ND_arrayappend_vector3_vector3array
+[15:53:13] Define shader node: ND_arrayappend_vector3array_vector3array
+[15:53:13] Define shader node: ND_arrayappend_vector4_vector4array
+[15:53:13] Define shader node: ND_arrayappend_vector4array_vector4array
+[15:53:13] Define shader node: ND_arrayappend_string_stringarray
+[15:53:13] Define shader node: ND_arrayappend_stringarray_stringarray
+[15:53:13] Define shader node: ND_remap_float
+[15:53:13] Define shader node: ND_remap_color3
+[15:53:13] Define shader node: ND_remap_color4
+[15:53:13] Define shader node: ND_remap_vector2
+[15:53:13] Define shader node: ND_remap_vector3
+[15:53:13] Define shader node: ND_remap_vector4
+[15:53:13] Define shader node: ND_remap_color3FA
+[15:53:13] Define shader node: ND_remap_color4FA
+[15:53:13] Define shader node: ND_remap_vector2FA
+[15:53:13] Define shader node: ND_remap_vector3FA
+[15:53:13] Define shader node: ND_remap_vector4FA
+[15:53:13] Define shader node: ND_smoothstep_float
+[15:53:13] Define shader node: ND_smoothstep_color3
+[15:53:13] Define shader node: ND_smoothstep_color4
+[15:53:13] Define shader node: ND_smoothstep_vector2
+[15:53:13] Define shader node: ND_smoothstep_vector3
+[15:53:13] Define shader node: ND_smoothstep_vector4
+[15:53:13] Define shader node: ND_smoothstep_color3FA
+[15:53:13] Define shader node: ND_smoothstep_color4FA
+[15:53:13] Define shader node: ND_smoothstep_vector2FA
+[15:53:13] Define shader node: ND_smoothstep_vector3FA
+[15:53:13] Define shader node: ND_smoothstep_vector4FA
+[15:53:13] Define shader node: ND_curveadjust_float
+[15:53:13] Define shader node: ND_curveadjust_color3
+[15:53:13] Define shader node: ND_curveadjust_color4
+[15:53:13] Define shader node: ND_curveadjust_vector2
+[15:53:13] Define shader node: ND_curveadjust_vector3
+[15:53:13] Define shader node: ND_curveadjust_vector4
+[15:53:13] Define shader node: ND_luminance_color3
+[15:53:13] Define shader node: ND_luminance_color4
+[15:53:13] Define shader node: ND_rgbtohsv_color3
+[15:53:13] Define shader node: ND_rgbtohsv_color4
+[15:53:13] Define shader node: ND_hsvtorgb_color3
+[15:53:13] Define shader node: ND_hsvtorgb_color4
+[15:53:13] Define shader node: ND_premult_color4
+[15:53:13] Define shader node: ND_unpremult_color4
+[15:53:13] Define shader node: ND_plus_float
+[15:53:13] Define shader node: ND_plus_color3
+[15:53:13] Define shader node: ND_plus_color4
+[15:53:13] Define shader node: ND_minus_float
+[15:53:13] Define shader node: ND_minus_color3
+[15:53:13] Define shader node: ND_minus_color4
+[15:53:13] Define shader node: ND_difference_float
+[15:53:13] Define shader node: ND_difference_color3
+[15:53:13] Define shader node: ND_difference_color4
+[15:53:13] Define shader node: ND_burn_float
+[15:53:13] Define shader node: ND_burn_color3
+[15:53:13] Define shader node: ND_burn_color4
+[15:53:13] Define shader node: ND_dodge_float
+[15:53:13] Define shader node: ND_dodge_color3
+[15:53:13] Define shader node: ND_dodge_color4
+[15:53:13] Define shader node: ND_screen_float
+[15:53:13] Define shader node: ND_screen_color3
+[15:53:13] Define shader node: ND_screen_color4
+[15:53:13] Define shader node: ND_overlay_float
+[15:53:13] Define shader node: ND_overlay_color3
+[15:53:13] Define shader node: ND_overlay_color4
+[15:53:13] Define shader node: ND_disjointover_color4
+[15:53:13] Define shader node: ND_in_color4
+[15:53:13] Define shader node: ND_mask_color4
+[15:53:13] Define shader node: ND_matte_color4
+[15:53:13] Define shader node: ND_out_color4
+[15:53:13] Define shader node: ND_over_color4
+[15:53:13] Define shader node: ND_inside_float
+[15:53:13] Define shader node: ND_inside_color3
+[15:53:13] Define shader node: ND_inside_color4
+[15:53:13] Define shader node: ND_outside_float
+[15:53:13] Define shader node: ND_outside_color3
+[15:53:13] Define shader node: ND_outside_color4
+[15:53:13] Define shader node: ND_mix_float
+[15:53:13] Define shader node: ND_mix_color3
+[15:53:13] Define shader node: ND_mix_color4
+[15:53:13] Define shader node: ND_mix_vector2
+[15:53:13] Define shader node: ND_mix_vector3
+[15:53:13] Define shader node: ND_mix_vector4
+[15:53:13] Define shader node: ND_mix_surfaceshader
+[15:53:13] Define shader node: ND_mix_displacementshader
+[15:53:13] Define shader node: ND_mix_volumeshader
+[15:53:13] Define shader node: ND_ifgreater_float
+[15:53:13] Define shader node: ND_ifgreater_color3
+[15:53:13] Define shader node: ND_ifgreater_color4
+[15:53:13] Define shader node: ND_ifgreater_vector2
+[15:53:13] Define shader node: ND_ifgreater_vector3
+[15:53:13] Define shader node: ND_ifgreater_vector4
+[15:53:13] Define shader node: ND_ifgreater_floatI
+[15:53:13] Define shader node: ND_ifgreater_color3I
+[15:53:13] Define shader node: ND_ifgreater_color4I
+[15:53:13] Define shader node: ND_ifgreater_vector2I
+[15:53:13] Define shader node: ND_ifgreater_vector3I
+[15:53:13] Define shader node: ND_ifgreater_vector4I
+[15:53:13] Define shader node: ND_ifgreatereq_float
+[15:53:13] Define shader node: ND_ifgreatereq_color3
+[15:53:13] Define shader node: ND_ifgreatereq_color4
+[15:53:13] Define shader node: ND_ifgreatereq_vector2
+[15:53:13] Define shader node: ND_ifgreatereq_vector3
+[15:53:13] Define shader node: ND_ifgreatereq_vector4
+[15:53:13] Define shader node: ND_ifgreatereq_floatI
+[15:53:13] Define shader node: ND_ifgreatereq_color3I
+[15:53:13] Define shader node: ND_ifgreatereq_color4I
+[15:53:13] Define shader node: ND_ifgreatereq_vector2I
+[15:53:13] Define shader node: ND_ifgreatereq_vector3I
+[15:53:13] Define shader node: ND_ifgreatereq_vector4I
+[15:53:13] Define shader node: ND_ifequal_float
+[15:53:13] Define shader node: ND_ifequal_color3
+[15:53:13] Define shader node: ND_ifequal_color4
+[15:53:13] Define shader node: ND_ifequal_vector2
+[15:53:13] Define shader node: ND_ifequal_vector3
+[15:53:13] Define shader node: ND_ifequal_vector4
+[15:53:13] Define shader node: ND_ifequal_floatI
+[15:53:13] Define shader node: ND_ifequal_color3I
+[15:53:13] Define shader node: ND_ifequal_color4I
+[15:53:13] Define shader node: ND_ifequal_vector2I
+[15:53:13] Define shader node: ND_ifequal_vector3I
+[15:53:13] Define shader node: ND_ifequal_vector4I
+[15:53:13] Define shader node: ND_ifequal_floatB
+[15:53:13] Define shader node: ND_ifequal_color3B
+[15:53:13] Define shader node: ND_ifequal_color4B
+[15:53:13] Define shader node: ND_ifequal_vector2B
+[15:53:13] Define shader node: ND_ifequal_vector3B
+[15:53:13] Define shader node: ND_ifequal_vector4B
+[15:53:13] Define shader node: ND_switch_float
+[15:53:13] Define shader node: ND_switch_color3
+[15:53:13] Define shader node: ND_switch_color4
+[15:53:13] Define shader node: ND_switch_vector2
+[15:53:13] Define shader node: ND_switch_vector3
+[15:53:13] Define shader node: ND_switch_vector4
+[15:53:13] Define shader node: ND_switch_floatI
+[15:53:13] Define shader node: ND_switch_color3I
+[15:53:13] Define shader node: ND_switch_color4I
+[15:53:13] Define shader node: ND_switch_vector2I
+[15:53:13] Define shader node: ND_switch_vector3I
+[15:53:13] Define shader node: ND_switch_vector4I
+[15:53:13] Define shader node: ND_convert_float_color3
+[15:53:13] Define shader node: ND_convert_float_color4
+[15:53:13] Define shader node: ND_convert_float_vector2
+[15:53:13] Define shader node: ND_convert_float_vector3
+[15:53:13] Define shader node: ND_convert_float_vector4
+[15:53:13] Define shader node: ND_convert_vector2_vector3
+[15:53:13] Define shader node: ND_convert_vector3_color3
+[15:53:13] Define shader node: ND_convert_vector3_vector2
+[15:53:13] Define shader node: ND_convert_vector3_vector4
+[15:53:13] Define shader node: ND_convert_vector4_color4
+[15:53:13] Define shader node: ND_convert_vector4_vector3
+[15:53:13] Define shader node: ND_convert_color3_vector3
+[15:53:13] Define shader node: ND_convert_color4_vector4
+[15:53:13] Define shader node: ND_convert_color3_color4
+[15:53:13] Define shader node: ND_convert_color4_color3
+[15:53:13] Define shader node: ND_convert_boolean_float
+[15:53:13] Define shader node: ND_convert_integer_float
+[15:53:13] Define shader node: ND_swizzle_float_color3
+[15:53:13] Define shader node: ND_swizzle_float_color4
+[15:53:13] Define shader node: ND_swizzle_float_vector2
+[15:53:13] Define shader node: ND_swizzle_float_vector3
+[15:53:13] Define shader node: ND_swizzle_float_vector4
+[15:53:13] Define shader node: ND_swizzle_color3_float
+[15:53:13] Define shader node: ND_swizzle_color3_color3
+[15:53:13] Define shader node: ND_swizzle_color3_color4
+[15:53:13] Define shader node: ND_swizzle_color3_vector2
+[15:53:13] Define shader node: ND_swizzle_color3_vector3
+[15:53:13] Define shader node: ND_swizzle_color3_vector4
+[15:53:13] Define shader node: ND_swizzle_color4_float
+[15:53:13] Define shader node: ND_swizzle_color4_color3
+[15:53:13] Define shader node: ND_swizzle_color4_color4
+[15:53:13] Define shader node: ND_swizzle_color4_vector2
+[15:53:13] Define shader node: ND_swizzle_color4_vector3
+[15:53:13] Define shader node: ND_swizzle_color4_vector4
+[15:53:13] Define shader node: ND_swizzle_vector2_float
+[15:53:13] Define shader node: ND_swizzle_vector2_color3
+[15:53:13] Define shader node: ND_swizzle_vector2_color4
+[15:53:13] Define shader node: ND_swizzle_vector2_vector2
+[15:53:13] Define shader node: ND_swizzle_vector2_vector3
+[15:53:13] Define shader node: ND_swizzle_vector2_vector4
+[15:53:13] Define shader node: ND_swizzle_vector3_float
+[15:53:13] Define shader node: ND_swizzle_vector3_color3
+[15:53:13] Define shader node: ND_swizzle_vector3_color4
+[15:53:13] Define shader node: ND_swizzle_vector3_vector2
+[15:53:13] Define shader node: ND_swizzle_vector3_vector3
+[15:53:13] Define shader node: ND_swizzle_vector3_vector4
+[15:53:13] Define shader node: ND_swizzle_vector4_float
+[15:53:13] Define shader node: ND_swizzle_vector4_color3
+[15:53:13] Define shader node: ND_swizzle_vector4_color4
+[15:53:13] Define shader node: ND_swizzle_vector4_vector2
+[15:53:13] Define shader node: ND_swizzle_vector4_vector3
+[15:53:13] Define shader node: ND_swizzle_vector4_vector4
+[15:53:13] Define shader node: ND_combine2_vector2
+[15:53:13] Define shader node: ND_combine2_color4CF
+[15:53:13] Define shader node: ND_combine2_vector4VF
+[15:53:13] Define shader node: ND_combine2_vector4VV
+[15:53:13] Define shader node: ND_combine3_color3
+[15:53:13] Define shader node: ND_combine3_vector3
+[15:53:13] Define shader node: ND_combine4_color4
+[15:53:13] Define shader node: ND_combine4_vector4
+[15:53:13] Define shader node: ND_blur_float
+[15:53:13] Define shader node: ND_blur_color3
+[15:53:13] Define shader node: ND_blur_color4
+[15:53:13] Define shader node: ND_blur_vector2
+[15:53:13] Define shader node: ND_blur_vector3
+[15:53:13] Define shader node: ND_blur_vector4
+[15:53:13] Define shader node: ND_heighttonormal_vector3
+[15:53:13] Define shader node: ND_dot_float
+[15:53:13] Define shader node: ND_dot_color3
+[15:53:13] Define shader node: ND_dot_color4
+[15:53:13] Define shader node: ND_dot_vector2
+[15:53:13] Define shader node: ND_dot_vector3
+[15:53:13] Define shader node: ND_dot_vector4
+[15:53:13] Define shader node: ND_dot_boolean
+[15:53:13] Define shader node: ND_dot_integer
+[15:53:13] Define shader node: ND_dot_matrix33
+[15:53:13] Define shader node: ND_dot_matrix44
+[15:53:13] Define shader node: ND_dot_string
+[15:53:13] Define shader node: ND_dot_filename
+[15:53:13] Define shader node: ND_dot_surfaceshader
+[15:53:13] Define shader node: ND_dot_displacementshader
+[15:53:13] Define shader node: ND_dot_volumeshader
+[15:53:13] Define shader node: ND_dot_lightshader
+[15:53:13] Define shader node: ND_point_light
+[15:53:13] Define shader node: ND_directional_light
+[15:53:13] Define shader node: ND_spot_light
+[15:53:13] Loading MaterialX definitions from: /mnt/puppetshare/software/houdini/houdini-19.5/extracted/hfs19.5.626/houdini/karmaNodeGraphs.json
+[15:53:13] Define shader node: ND_lama_add_bsdf
+[15:53:13] Define shader node: ND_lama_add_edf
+[15:53:13] Define shader node: ND_lama_conductor
+[15:53:13] Define shader node: ND_lama_dielectric
+[15:53:13] Define shader node: ND_lama_diffuse
+[15:53:13] Define shader node: ND_lama_emission
+[15:53:13] Define shader node: ND_lama_layer_bsdf
+[15:53:13] Define shader node: ND_lama_mix_bsdf
+[15:53:13] Define shader node: ND_lama_mix_edf
+[15:53:13] Define shader node: ND_lama_sheen
+[15:53:13] Define shader node: ND_lama_sss
+[15:53:13] Define shader node: ND_lama_translucent
+[15:53:13] Define shader node: ND_standard_surface_to_UsdPreviewSurface
+[15:53:13] Define shader node: ND_gltf_pbr_surfaceshader
+[15:53:13] Define shader node: ND_standard_surface_surfaceshader
+[15:53:13] Define shader node: ND_standard_surface_surfaceshader_100
+[15:53:13] Define shader node: ND_UsdPreviewSurface_surfaceshader
+[15:53:13] Define shader node: ND_UsdUVTexture
+[15:53:13] Define shader node: ND_UsdPrimvarReader_integer
+[15:53:13] Define shader node: ND_UsdPrimvarReader_boolean
+[15:53:13] Define shader node: ND_UsdPrimvarReader_string
+[15:53:13] Define shader node: ND_UsdPrimvarReader_float
+[15:53:13] Define shader node: ND_UsdPrimvarReader_vector2
+[15:53:13] Define shader node: ND_UsdPrimvarReader_vector3
+[15:53:13] Define shader node: ND_UsdPrimvarReader_vector4
+[15:53:13] Define shader node: ND_UsdTransform2d
+[15:53:13] Define shader node: ND_glossiness_anisotropy
+[15:53:13] Define shader node: ND_tiledimage_float
+[15:53:13] Define shader node: ND_tiledimage_color3
+[15:53:13] Define shader node: ND_tiledimage_color4
+[15:53:13] Define shader node: ND_tiledimage_vector2
+[15:53:13] Define shader node: ND_tiledimage_vector3
+[15:53:13] Define shader node: ND_tiledimage_vector4
+[15:53:13] Define shader node: ND_triplanarprojection_float
+[15:53:13] Define shader node: ND_triplanarprojection_color3
+[15:53:13] Define shader node: ND_triplanarprojection_color4
+[15:53:13] Define shader node: ND_triplanarprojection_vector2
+[15:53:13] Define shader node: ND_triplanarprojection_vector3
+[15:53:13] Define shader node: ND_triplanarprojection_vector4
+[15:53:13] Define shader node: ND_ramp4_float
+[15:53:13] Define shader node: ND_ramp4_color3
+[15:53:13] Define shader node: ND_ramp4_color4
+[15:53:13] Define shader node: ND_ramp4_vector2
+[15:53:13] Define shader node: ND_ramp4_vector3
+[15:53:13] Define shader node: ND_ramp4_vector4
+[15:53:13] Define shader node: ND_place2d_vector2
+[15:53:13] Define shader node: ND_contrast_float
+[15:53:13] Define shader node: ND_contrast_color3
+[15:53:13] Define shader node: ND_contrast_color4
+[15:53:13] Define shader node: ND_contrast_vector2
+[15:53:13] Define shader node: ND_contrast_vector3
+[15:53:13] Define shader node: ND_contrast_vector4
+[15:53:13] Define shader node: ND_contrast_color3FA
+[15:53:13] Define shader node: ND_contrast_color4FA
+[15:53:13] Define shader node: ND_contrast_vector2FA
+[15:53:13] Define shader node: ND_contrast_vector3FA
+[15:53:13] Define shader node: ND_contrast_vector4FA
+[15:53:13] Define shader node: ND_range_float
+[15:53:13] Define shader node: ND_range_color3
+[15:53:13] Define shader node: ND_range_color4
+[15:53:13] Define shader node: ND_range_vector2
+[15:53:13] Define shader node: ND_range_vector3
+[15:53:13] Define shader node: ND_range_vector4
+[15:53:13] Define shader node: ND_range_color3FA
+[15:53:13] Define shader node: ND_range_color4FA
+[15:53:13] Define shader node: ND_range_vector2FA
+[15:53:13] Define shader node: ND_range_vector3FA
+[15:53:13] Define shader node: ND_range_vector4FA
+[15:53:13] Define shader node: ND_hsvadjust_color3
+[15:53:13] Define shader node: ND_hsvadjust_color4
+[15:53:13] Define shader node: ND_saturate_color3
+[15:53:13] Define shader node: ND_saturate_color4
+[15:53:13] Define shader node: ND_extract_color3
+[15:53:13] Define shader node: ND_extract_color4
+[15:53:13] Define shader node: ND_extract_vector2
+[15:53:13] Define shader node: ND_extract_vector3
+[15:53:13] Define shader node: ND_extract_vector4
+[15:53:13] Define shader node: ND_separate2_vector2
+[15:53:13] Define shader node: ND_separate3_color3
+[15:53:13] Define shader node: ND_separate3_vector3
+[15:53:13] Define shader node: ND_separate4_color4
+[15:53:13] Define shader node: ND_separate4_vector4
+[15:53:13] Define shader node: ND_hcatmullrom_float
+[15:53:13] Define shader node: ND_hcatmullrom_color3
+[15:53:13] Define shader node: ND_hinvlinear_float
+[15:53:13] Define shader node: ND_hmtlxbias_float
+[15:53:13] Define shader node: ND_hmtlxfacingratio_float
+[15:53:13] Define shader node: ND_hmtlxgain_float
+[15:53:13] Define shader node: ND_huniformcubic_float
+[15:53:13] Define shader node: ND_huniformcubic_color3
+[15:53:13] Define shader node: ND_huniformramp_color3
+[15:53:13] Define shader node: ND_huniformramp_float
+[15:53:13] /fogbox5/GEO/volume topology change: 6 faces, 24 vertices, 8 points
+[15:53:13] /fogbox5/GEO/volume 3 primvars:
+  constant karma:object:volumeuniform
+  constant karma:object:volumeuniformdensity
+  constant karma:object:volumeuniformsamples
+[15:53:13] /fogbox5/GEO/volume 1 primvars:
+  vertex points
+[15:53:13] /fogbox5/GEO/volume Attributes:
+    1 point attribute - 1 motion segments
+	real32 P[3]
+[15:53:13] /fogbox5/GEO/volume create polygon mesh
+[15:53:13] /ground2/mesh_0 topology change: 2865 faces, 11124 vertices, 2734 points
+[15:53:13] /ground2/mesh_0 1 primvars:
+  vertex points
+[15:53:13] /ground2/mesh_0 Attributes:
+    1 point attribute - 1 motion segments
+	real32 P[3]
+[15:53:13] /fogbox5/GEO/volume 1 transform
+  [9.9949931, 0, 0.20935938, 0, 0, 10, 0, 0, -0.20941832, 0, 9.997807, 0, -0.79355603, 0.54966748, 0.23016045, 1]
+[15:53:13] Assign /fogbox5/materials/OUT_fogbox to /fogbox5/GEO/volume (0 face set materials)
+[15:53:13] /ground2/mesh_0 create polygon mesh
+[15:53:13] /rubbertoy3/geo/shape topology change: 12854 faces, 51416 vertices, 12874 points
+[15:53:13] /rubbertoy3/geo/shape 2 primvars:
+  vertex points
+  vertex normals
+[15:53:13] /rubbertoy3/geo/shape 1 primvars:
+  facevarying st
+[15:53:13] /rubbertoy3/geo/shape Attributes:
+    1 vertex attribute - 1 motion segments
+	real32 st[2]
+    2 point attributes - 1 motion segments
+	real32 P[3]
+	real32 N[3]
+[15:53:13] /rubbertoy3/geo/shape create polygon mesh
+[15:53:13] /ground2/mesh_0 1 transform
+  [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+[15:53:13] Assign  to /ground2/mesh_0 (0 face set materials)
+[15:53:13] /rubbertoy3/geo/shape 1 transform
+  [0.36805549, 0, 0, 0, 0, 0.36805549, 0, 0, 0, 0, 0.36805549, 0, 3.5355049, -0.208294, 0.18138662, 1]
+[15:53:13] Assign /rubbertoy3/mtl/ToyShader to /rubbertoy3/geo/shape (0 face set materials)
+[15:53:13] Setting render camera: /cameras/shot_cam
+[15:53:13] Update view/proj: ( (0.13962002323898973, -0.03973280710627944, 0.9894076779317004, 0), (2.854608318328053e-7, 0.9991946360542597, 0.04012579320479621, 0), (-0.9902051550616481, -0.005602081742597777, 0.13950758964832977, 0), (0.24064791960960863, 0.18755382498097542, -5.417862192886793, 1) ) ( (2.899069426659754, 0, 0, 0), (0, 5.15390124135023, 0, 0), (0, 0, -1.0000020000018797, -1), (0, 0, -0.056145794956092406, 0) )
+[15:53:13] Aspect ratio conform 4 H/V: 0.00020955/6.985e-05, PAR: 1.6875, IAR: 3
+[15:53:13] Camera /cameras/shot_cam:
+{
+	"transform":[[0.139620023238989727,-0.0397328071062794386,0.989407677931700369,0,2.85460831832805295e-07,0.999194636054259733,0.0401257932047962076,0,-0.990205155061648079,-0.00560208174259777675,0.139507589648329766,0,0.240647919609608629,0.18755382498097542,
+			-5.41786219288679316,1]
+	],
+	"projection":"perspective",
+	"cameraProperties":[
+		{
+			"focal":0.000180000006366753951,
+			"aperture":6.9850000727456063e-05,
+			"projection":1,
+			"lensshader":"RAW[ \"hou.node(ch('xn__karmacameralensshadervop_4fbg')).shaderString() if hou.node(ch('xn__karmacameralensshadervop_4fbg')) != None else ''\" python ]",
+			"orthowidth":6.98500007274560613e-06,
+			"clip":[0.0280728694051504135,28072.87109375],
+			"shutter":[-0.25,0.25],
+			"focusdistance":5,
+			"fstop":0,
+			"window":[-1,1,-1,1],
+			"exposure":0,
+			"tint":[1,1,1]
+		}
+	]
+}
+
+[15:53:13] Restart Hydra render (1 AOVs)
+[15:53:13] Adding samplefilter module: copyalpha
+[15:53:13] Pixel oracle: variance
+[15:53:13] Load Wall Clock Time: 0:00:09.70
+[15:53:13] Warning: Karma detects 12 vs. TBB 32 (adjust threading)
+[15:53:13]        Load CPU Time: 0:00:05.27
+[15:53:13] Load System CPU Time: 0:00:00.93
+[15:53:13]    Load Memory Usage: 1.58 GB
+[15:53:13] Update Wall Clock Time: 0:00:00.81
+[15:53:13] Setting cache size to: 98.52 GB
+[15:53:13] /lights/distantlight6 not added to tree: Light type not supported
+[15:53:13] Light Tree: 0 lights
+[15:53:13] Uniform List: 1 lights
+[15:53:13] Building acceleration structure
+[15:53:13] Acceleration build time (wall clock): 0:00.00
+[15:53:13] Scene bounding box: (-10, -4.45033, -10) - (10, 5.54967, 10)
+[15:53:13] Rendering 1920x1080 (16 spp) - bucket size: 32
+[15:53:13] 2040 primary buckets
+ALF_PROGRESS 0%
+[15:53:13]   0% Lap=0:00:09.80 Left=<unknown> Mem=325.84 MB Peak=325.84 MB
+[15:53:14] First Pixel: 0:01.48
+[15:53:16] Loading texture 'opdef:/Sop/testgeometry_rubbertoy?toylowres.jpg' in memory as .rat format.  This uses approximately 1.00 MB of extra memory.
+[15:53:16] OCIO config: /mutter/projects/renderengine-testing/data/ocio/config.ocio
+[15:53:16] Loading texture 'opdef:/Sop/testgeometry_rubbertoy?toyspeclowres.jpg' in memory as .rat format.  This uses approximately 1.00 MB of extra memory.
+ALF_PROGRESS 1%
+[15:53:16]   1% Lap=0:00:12.22 Left=0:14:55.93 Mem=445.42 MB Peak=445.42 MB
+ALF_PROGRESS 2%
+[15:53:16]   2% Lap=0:00:12.42 Left=0:09:24.21 Mem=448.70 MB Peak=448.70 MB
+ALF_PROGRESS 3%
+[15:53:16]   3% Lap=0:00:12.73 Left=0:06:07.01 Mem=451.42 MB Peak=451.42 MB
+ALF_PROGRESS 4%
+[15:53:17]   4% Lap=0:00:12.93 Left=0:05:00.52 Mem=452.17 MB Peak=452.17 MB
+ALF_PROGRESS 5%
+[15:53:17]   5% Lap=0:00:13.23 Left=0:04:00.52 Mem=452.67 MB Peak=452.89 MB
+ALF_PROGRESS 6%
+[15:53:17]   6% Lap=0:00:13.53 Left=0:03:18.38 Mem=453.15 MB Peak=453.15 MB
+ALF_PROGRESS 7%
+[15:53:17]   7% Lap=0:00:13.73 Left=0:02:52.61 Mem=452.13 MB Peak=453.15 MB
+ALF_PROGRESS 8%
+[15:53:18]   8% Lap=0:00:13.94 Left=0:02:35.75 Mem=453.56 MB Peak=453.56 MB
+ALF_PROGRESS 9%
+[15:53:18]   9% Lap=0:00:14.14 Left=0:02:22.32 Mem=453.37 MB Peak=453.81 MB
+ALF_PROGRESS 10%
+[15:53:18]  10% Lap=0:00:14.44 Left=0:02:07.22 Mem=454.21 MB Peak=454.40 MB
+ALF_PROGRESS 11%
+[15:53:18]  11% Lap=0:00:14.74 Left=0:01:55.69 Mem=454.66 MB Peak=455.29 MB
+ALF_PROGRESS 12%
+[15:53:19]  12% Lap=0:00:14.94 Left=0:01:49.51 Mem=454.60 MB Peak=455.29 MB
+ALF_PROGRESS 13%
+[15:53:19]  13% Lap=0:00:15.25 Left=0:01:40.21 Mem=454.97 MB Peak=455.29 MB
+ALF_PROGRESS 14%
+[15:53:19]  14% Lap=0:00:15.55 Left=0:01:33.67 Mem=455.72 MB Peak=455.72 MB
+ALF_PROGRESS 15%
+[15:53:20]  15% Lap=0:00:15.85 Left=0:01:28.15 Mem=455.28 MB Peak=455.72 MB
+ALF_PROGRESS 16%
+[15:53:20]  16% Lap=0:00:16.16 Left=0:01:23.81 Mem=455.53 MB Peak=455.72 MB
+ALF_PROGRESS 17%
+[15:53:20]  17% Lap=0:00:16.46 Left=0:01:19.94 Mem=456.18 MB Peak=456.51 MB
+ALF_PROGRESS 18%
+[15:53:20]  18% Lap=0:00:16.76 Left=0:01:15.72 Mem=456.25 MB Peak=456.51 MB
+ALF_PROGRESS 19%
+[15:53:21]  19% Lap=0:00:16.97 Left=0:01:12.30 Mem=457.33 MB Peak=457.33 MB
+ALF_PROGRESS 20%
+[15:53:21]  20% Lap=0:00:17.17 Left=0:01:07.28 Mem=456.74 MB Peak=457.33 MB
+ALF_PROGRESS 21%
+[15:53:21]  21% Lap=0:00:17.37 Left=0:01:02.80 Mem=457.95 MB Peak=457.95 MB
+ALF_PROGRESS 22%
+[15:53:21]  22% Lap=0:00:17.47 Left=0:01:00.96 Mem=459.78 MB Peak=459.78 MB
+ALF_PROGRESS 23%
+[15:53:21]  23% Lap=0:00:17.67 Left=0:00:57.85 Mem=462.52 MB Peak=462.52 MB
+ALF_PROGRESS 24%
+[15:53:22]  24% Lap=0:00:17.87 Left=0:00:55.03 Mem=463.15 MB Peak=463.15 MB
+ALF_PROGRESS 25%
+[15:53:22]  25% Lap=0:00:17.98 Left=0:00:53.03 Mem=461.48 MB Peak=463.15 MB
+ALF_PROGRESS 26%
+[15:53:22]  26% Lap=0:00:18.08 Left=0:00:49.35 Mem=459.64 MB Peak=463.15 MB
+ALF_PROGRESS 28%
+[15:53:22]  28% Lap=0:00:18.18 Left=0:00:46.18 Mem=462.34 MB Peak=463.15 MB
+ALF_PROGRESS 29%
+[15:53:22]  29% Lap=0:00:18.28 Left=0:00:43.66 Mem=465.71 MB Peak=465.71 MB
+ALF_PROGRESS 30%
+[15:53:22]  30% Lap=0:00:18.38 Left=0:00:41.34 Mem=466.09 MB Peak=466.09 MB
+ALF_PROGRESS 32%
+[15:53:22]  32% Lap=0:00:18.48 Left=0:00:38.84 Mem=467.50 MB Peak=467.50 MB
+ALF_PROGRESS 33%
+[15:53:22]  33% Lap=0:00:18.58 Left=0:00:36.56 Mem=466.45 MB Peak=467.50 MB
+ALF_PROGRESS 35%
+[15:53:22]  35% Lap=0:00:18.68 Left=0:00:34.48 Mem=466.19 MB Peak=467.50 MB
+ALF_PROGRESS 36%
+[15:53:22]  36% Lap=0:00:18.78 Left=0:00:32.78 Mem=467.26 MB Peak=467.50 MB
+ALF_PROGRESS 38%
+[15:53:23]  38% Lap=0:00:18.89 Left=0:00:30.80 Mem=466.77 MB Peak=467.50 MB
+ALF_PROGRESS 40%
+[15:53:23]  40% Lap=0:00:18.99 Left=0:00:28.04 Mem=466.89 MB Peak=467.50 MB
+ALF_PROGRESS 42%
+[15:53:23]  42% Lap=0:00:19.09 Left=0:00:26.04 Mem=468.30 MB Peak=468.30 MB
+ALF_PROGRESS 44%
+[15:53:23]  44% Lap=0:00:19.19 Left=0:00:24.07 Mem=467.90 MB Peak=468.30 MB
+ALF_PROGRESS 47%
+[15:53:23]  47% Lap=0:00:19.29 Left=0:00:21.73 Mem=468.23 MB Peak=468.30 MB
+ALF_PROGRESS 49%
+[15:53:23]  49% Lap=0:00:19.39 Left=0:00:19.89 Mem=468.73 MB Peak=468.73 MB
+ALF_PROGRESS 52%
+[15:53:23]  52% Lap=0:00:19.49 Left=0:00:17.55 Mem=468.37 MB Peak=468.73 MB
+ALF_PROGRESS 55%
+[15:53:23]  55% Lap=0:00:19.59 Left=0:00:15.67 Mem=469.92 MB Peak=469.92 MB
+ALF_PROGRESS 59%
+[15:53:23]  59% Lap=0:00:19.70 Left=0:00:13.43 Mem=469.47 MB Peak=469.92 MB
+ALF_PROGRESS 63%
+[15:53:23]  63% Lap=0:00:19.80 Left=0:00:11.51 Mem=470.66 MB Peak=470.66 MB
+ALF_PROGRESS 67%
+[15:53:24]  67% Lap=0:00:19.90 Left=0:00:09.43 Mem=470.90 MB Peak=470.90 MB
+ALF_PROGRESS 73%
+[15:53:24]  73% Lap=0:00:20.00 Left=0:00:07.27 Mem=471.31 MB Peak=471.31 MB
+ALF_PROGRESS 79%
+[15:53:24]  79% Lap=0:00:20.10 Left=0:00:05.27 Mem=471.34 MB Peak=471.34 MB
+ALF_PROGRESS 86%
+[15:53:24]  86% Lap=0:00:20.20 Left=0:00:03.22 Mem=470.86 MB Peak=471.34 MB
+ALF_PROGRESS 94%
+[15:53:24]  94% Lap=0:00:20.30 Left=0:00:01.19 Mem=471.61 MB Peak=471.61 MB
+[15:53:24] Thread   8 - 2659 buckets, 855241 rays
+[15:53:24] Thread  17 - 2550 buckets, 836674 rays
+[15:53:24] Thread   9 - 2683 buckets, 878759 rays
+[15:53:24] Thread  13 - 2678 buckets, 870928 rays
+[15:53:24] Thread  11 - 2641 buckets, 847141 rays
+[15:53:24] Thread  16 - 2799 buckets, 881003 rays
+[15:53:24] Thread  12 - 2682 buckets, 872863 rays
+[15:53:24] Thread   6 - 2773 buckets, 859289 rays
+[15:53:24] Thread   7 - 2706 buckets, 868002 rays
+[15:53:24] Thread  10 - 2855 buckets, 874605 rays
+[15:53:24] Thread  18 - 2743 buckets, 878075 rays
+[15:53:24] Thread  14 - 2871 buckets, 886541 rays
+ALF_PROGRESS 100%
+[15:53:24] 100% Lap=0:00:20.40 Left=0:00:00.00 Mem=471.55 MB Peak=471.61 MB
+ALF_PROGRESS 100%
+[15:53:24] Unified Cache: 0.00 KB of 98.52 GB used
+[15:53:24] 	2 non-RAT textures using 2.00 MB
+[15:53:24] Primvar Cache
+      Cache Size = 2
+            Hits = 0
+            Miss = 15
+   Numerics Size = 13
+     String Size = 0
+   String Memory = 0.00 KB
+
+   Primvar Memory                                   Actual   Uncompressed
+   Total                                           1.19 MB        1.19 MB
+   real32[2] st                                  401.77 KB      401.77 KB
+   int32 <topology>                              305.82 KB      305.82 KB
+   real32[3] N                                   281.59 KB      281.59 KB
+   real32[3] P                                   183.00 KB      183.00 KB
+   int32 QuadVerts                                39.52 KB       39.52 KB
+   int32 TriVerts                                  3.94 KB        3.94 KB
+
+[15:53:24] Bucket Time Breakdown
+   Category                                          Total     Percentage
+   Shading                                          16.42s          12.9%
+   Lighting                                         24.06s          18.8%
+   Shadows                                          15.84s          12.4%
+   Primary rays                                     14.71s          11.5%
+   Indirect rays                                    28.93s          22.7%
+   SSS samples                                       0.91s           0.7%
+   Filtering                                         1.41s           1.1%
+   Unaccounted                                      25.33s          19.8%
+
+[15:53:24] Renderer Stats:
+{
+	"cameraCounts":1,
+	"cameraRays":10409121,
+	"clipFar":28072.87109375,
+	"clipNear":0.0280728694051504135,
+	"coordSysCounts":0,
+	"curveCounts":[0,0],
+	"detailedTimes":"   Category                                          Total     Percentage\n   Shading                                          16.42s          12.9%\n   Lighting                                         24.06s          18.8%\n   Shadows                                          15.84s          12.4%\n   Primary rays                                     14.71s          11.5%\n   Indirect rays                                    28.93s          22.7%\n   SSS samples                                       0.91s           0.7%\n   Filtering                                         1.41s           1.1%\n   Unaccounted                                      25.33s          19.8%\n",
+	"indirectRays":15058159,
+	"lightCounts":1,
+	"lightGeoRays":21913915,
+	"lightShades":21914086,
+	"lightTreeCounts":0,
+	"loadClockTime":0.0786589999999999928,
+	"loadMemory":311246144,
+	"loadSTime":0.928239999999999954,
+	"loadUTime":5.27788799999999991,
+	"occlusionRays":16514784,
+	"octreeBuildTime":0.0771809999999999996,
+	"opacityShades":22300117,
+	"peakMemory":494521872,
+	"percentDone":100,
+	"pointCounts":[0,0],
+	"pointMeshCounts":[0,0],
+	"polyCounts":[15725,15725],
+	"primvarUsage":"{\"cacheSize\":2,\"numericCacheSize\":13,\"cacheHits\":0,\"cacheMiss\":15,\"stringCount\":0,\"stringMemory\":0,\"primvars\":[{\"name\":\"Total\",\"memory\":1244812},{\"name\":\"real32[2] st\",\"memory\":411416},{\"name\":\"int32 <topology>\",\"memory\":313156},{\"name\":\"real32[3] N\",\"memory\":288352},{\"name\":\"real32[3] P\",\"memory\":187392},{\"name\":\"int32 QuadVerts\",\"memory\":40464},{\"name\":\"int32 TriVerts\",\"memory\":4032}]}",
+	"probeRays":4153540,
+	"proceduralCounts":[0,0],
+	"renderProgressAnnotation":"1920 x 1080",
+	"renderStatsAnnotation":"",
+	"rendererName":"karma",
+	"rendererSettings":"{\"global\":\"{\\\"abortmissingtexture\\\":false,\\\"autoheadlight\\\":true,\\\"background_iprfilter\\\":\\\"\\\",\\\"bucketorder\\\":\\\"Middle\\\",\\\"bucketsize\\\":32,\\\"cacheratio\\\":0.85000002384185791,\\\"cachesize\\\":1000,\\\"colorlimit\\\":100000,\\\"colorlimitindirect\\\":3,\\\"colorlimitindlinked\\\":false,\\\"constrainmaxrough\\\":true,\\\"convergence_mode\\\":\\\"Variance\\\",\\\"dicingcamera\\\":\\\"\\\",\\\"dicingqualityscale\\\":1,\\\"diffusecomponents\\\":[\\\"diffuse\\\"],\\\"disable_lighting\\\":false,\\\"enable_dof\\\":false,\\\"engine\\\":\\\"cpu\\\",\\\"exportcomponents\\\":[\\\"diffuse\\\",\\\"reflect\\\",\\\"coat\\\",\\\"refract\\\",\\\"volume\\\",\\\"sss\\\"],\\\"guiding_directionalfilter\\\":0.100000001490116119,\\\"guiding_enable\\\":false,\\\"guiding_samples\\\":64,\\\"guiding_spatialfilter\\\":0.5,\\\"head_ao_distance\\\":1,\\\"head_ao_samples\\\":1,\\\"head_depthcue_alpha\\\":1,\\\"head_depthcue_color\\\":[0,0,0],\\\"head_depthcue_z\\\":[0,0],\\\"image_blur\\\":true,\\\"imagefilter\\\":\\\"[]\\\",\\\"imagemode\\\":\\\"Progressive\\\",\\\"img_datawindow\\\":[0,0,1919,1079],\\\"img_pixel_aspect\\\":1.6875,\\\"ipr_continuous_dicing\\\":false,\\\"ipr_inc_random\\\":false,\\\"ipr_proxy_for_imagefilter\\\":2,\\\"ipr_proxydepth\\\":0,\\\"ipr_reserve_threads\\\":0,\\\"light_sampling_mode\\\":\\\"Light Tree\\\",\\\"light_sampling_quality\\\":1,\\\"name\\\":\\\"karma\\\",\\\"offscreenquality\\\":0.00999999977648258209,\\\"override_lighting\\\":\\\"Off\\\",\\\"overrideobject\\\":\\\"\\\",\\\"pathtracedsamples\\\":16,\\\"pixelfilter\\\":\\\"blackman\\\",\\\"pixelfiltersize\\\":1.5,\\\"pixeloracle\\\":\\\"[\\\\\\\"variance\\\\\\\", {\\\\\\\"variance\\\\\\\": 0.1, \\\\\\\"plane\\\\\\\": \\\\\\\"C\\\\\\\", \\\\\\\"minrays\\\\\\\": 3, \\\\\\\"ociomode\\\\\\\": 0, \\\\\\\"ociodisplay\\\\\\\": \\\\\\\"RISE\\\\\\\", \\\\\\\"ocioview\\\\\\\": \\\\\\\"Client Grade\\\\\\\", \\\\\\\"ociocolorspace\\\\\\\": \\\\\\\"default\\\\\\\"}]\\\",\\\"progressivepasses\\\":0,\\\"randomseed\\\":1703806500,\\\"raybias\\\":0.00100000004749745131,\\\"refractcomponents\\\":[\\\"refract\\\"],\\\"rendercamera\\\":\\\"/cameras/shot_cam\\\",\\\"resolution\\\":[1920,1080],\\\"russianroulette_cutoff\\\":1,\\\"samplefilter\\\":\\\"[]\\\",\\\"samplesperpixel\\\":16,\\\"screendoorlimit\\\":4,\\\"shadingqualitymult\\\":1,\\\"ssscomponents\\\":[\\\"sss\\\"],\\\"use_background\\\":\\\"Auto\\\",\\\"usecacheratio\\\":true,\\\"uvunwrap_object_id\\\":-1,\\\"uvunwrap_ptex_max_res\\\":[1280,1280],\\\"uvunwrap_ptex_min_res\\\":[1280,1280],\\\"uvunwrap_ptex_rel_scale\\\":false,\\\"uvunwrap_ptex_scale\\\":1,\\\"uvunwrap_ptex_small_pct\\\":0,\\\"uvunwrap_texture_tile\\\":-1,\\\"uvunwrap_type\\\":\\\"UDIM\\\",\\\"version\\\":[19,5,626],\\\"volumecomponents\\\":[\\\"volume\\\"]}\",\"objectDefault\":\"{\\\"causticsenable\\\":false,\\\"causticsroughnessclamp\\\":0.200000002980232239,\\\"cull_backface\\\":\\\"Off\\\",\\\"curve_basis\\\":\\\"Geometry Default\\\",\\\"curve_style\\\":\\\"Rounded Curves\\\",\\\"cuspangle\\\":60,\\\"dicingquality\\\":0.5,\\\"diffuselimit\\\":1,\\\"diffusequality\\\":1,\\\"geosamples\\\":3,\\\"hdrprimid\\\":-1,\\\"holdoutmode\\\":\\\"None\\\",\\\"instance_samples\\\":3,\\\"instance_vblur\\\":\\\"No Velocity Blur\\\",\\\"isportal\\\":false,\\\"lightcategories\\\":[],\\\"lightsource_diffusescale\\\":1,\\\"lightsource_samplingquality\\\":1,\\\"lightsource_specularscale\\\":1,\\\"lightsubset\\\":\\\"Outside\\\",\\\"lpetag\\\":\\\"\\\",\\\"mblur\\\":true,\\\"point_style\\\":\\\"Spheres\\\",\\\"portaldomelights\\\":[\\\"*\\\"],\\\"reflectlimit\\\":3,\\\"reflectquality\\\":1,\\\"refractlimit\\\":3,\\\"refractquality\\\":1,\\\"samplesfromstage\\\":true,\\\"shadingquality\\\":1,\\\"smoothp\\\":true,\\\"ssslimit\\\":0,\\\"sssquality\\\":1,\\\"tracesets\\\":[],\\\"treat_as_lightsource\\\":\\\"No\\\",\\\"truedisplace\\\":true,\\\"uvunwrap_cage_obj\\\":-1,\\\"uvunwrap_highres_obj\\\":-1,\\\"uvunwrap_lowres_obj\\\":-1,\\\"varianceaa_maxsamples\\\":3,\\\"varianceaa_minsamples\\\":1,\\\"varianceaa_thresh\\\":0.100000001490116119,\\\"vblur\\\":\\\"No Velocity Blur\\\",\\\"visibilitymask\\\":65535,\\\"volumefilterwidth\\\":1,\\\"volumelimit\\\":0,\\\"volumequality\\\":1,\\\"volumesamplingchannel\\\":\\\"density\\\",\\\"volumesteprate\\\":0.25,\\\"volumeuniform\\\":false,\\\"volumeuniformdensity\\\":1,\\\"volumeuniformsamples\\\":4,\\\"volumevblurscale\\\":1,\\\"xformsamples\\\":3}\"}",
+	"rendererStage":"",
+	"rendererVersion":[19,5,626],
+	"surfaceShades":20069854,
+	"timeToFirstPixel":1.48087400000000002,
+	"totalClockTime":10.7465630000000001,
+	"totalMemory":494460168,
+	"totalSTime":5.54617499999999986,
+	"totalUTime":127.000794999999997,
+	"volumeCounts":[0,0],
+	"worldToCamera":[0.139620023238989727,-0.0397328071062794386,-0.989407677931700369,0,2.85460831832805295e-07,0.999194636054259733,-0.0401257932047962076,0,-0.990205155061648079,-0.00560208174259777675,-0.139507589648329766,0,0.240647919609608629,0.18755382498097542,
+		5.41786219288679316,1],
+	"worldToNDC":[0.239862608544120476,-0.204778968006169071,-0.98940866734030819,-0.989407677931700369,4.90412321758374655e-07,5.1497505791921121,-0.0401258333306271225,-0.0401257932047962076,-1.70113989366960117,-0.0288725766308635771,-0.139507729156050531,
+		-0.139507589648329766,0.413425212223838046,0.966633910926063988,5.38979471327603132,5.41786219288679316]
+}
+
+[15:53:24] Object Counts
+[15:53:24]        Polygons: 15,725
+[15:53:24]          Curves: 0
+[15:53:24]           Point: 0
+[15:53:24]    Point Meshes: 0
+[15:53:24]         Volumes: 0
+[15:53:24]     Procedurals: 0
+[15:53:24]          Lights: 1
+[15:53:24]         Cameras: 1
+[15:53:24]        CoordSys: 0
+[15:53:24] Ray Counts
+[15:53:24]         primary: 10,409,121
+[15:53:24]        indirect: 15,058,159
+[15:53:24]       occlusion: 16,514,784
+[15:53:24]       light geo: 21,913,915
+[15:53:24]           probe: 4,153,540
+[15:53:24]           total: 68,049,519
+[15:53:24] Shader Calls
+[15:53:24]    Displacement: 0
+[15:53:24]         Surface: 20,069,854
+[15:53:24]         Opacity: 22,300,117
+[15:53:24]        Emission: 0
+[15:53:24]           Light: 21,914,086
+[15:53:24]          Volume: 0
+[15:53:24] Frame Wall Clock Time: 0:00:10.75
+[15:53:24] Total Wall Clock Time: 0:00:20.40
+[15:53:24]        Total CPU Time: 0:02:07.00
+[15:53:24]  System CPU Time Only: 0:00:05.55
+[15:53:24]  Current Memory Usage: 471.55 MB
+[15:53:24]     Peak Memory Usage: 471.61 MB
+[15:53:24] VEX module cache misses: 0
+[15:53:26] Image save time: 0:00:01.92
+[15:53:26] Saved Image: /mutter/projects/renderengine-testing/scenes/renderman/img-cgi/renderman_lighting_lightTypes_v017/karma/karma_v017_1001.exr
+[15:53:26] Running postframe procedurals script: /mnt/puppetshare/software/houdini/houdini-19.5/extracted/hfs19.5.626/houdini/python3.9libs/husd/runprocedurals.py --mode postframe --validategeo
+[15:53:26] Running postrender procedurals script: /mnt/puppetshare/software/houdini/houdini-19.5/extracted/hfs19.5.626/houdini/python3.9libs/husd/runprocedurals.py --mode postrender --validategeo
